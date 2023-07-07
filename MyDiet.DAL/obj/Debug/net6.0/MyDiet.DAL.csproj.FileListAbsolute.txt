@@ -1,0 +1,15 @@
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\bin\Debug\net6.0\MyDiet.DAL.deps.json
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\bin\Debug\net6.0\MyDiet.DAL.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\bin\Debug\net6.0\MyDiet.DAL.pdb
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\bin\Debug\net6.0\MyDiet.Entity.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\bin\Debug\net6.0\MyDiet.Entity.pdb
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.csproj.AssemblyReference.cache
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.AssemblyInfoInputs.cache
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.AssemblyInfo.cs
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.csproj.CopyComplete
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\refint\MyDiet.DAL.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\MyDiet.DAL.pdb
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.DAL\obj\Debug\net6.0\ref\MyDiet.DAL.dll
