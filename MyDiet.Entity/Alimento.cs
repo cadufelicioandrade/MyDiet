@@ -17,6 +17,7 @@ namespace MyDiet.Entity
         public string NomeAlimento { get; set; }
         public decimal CaloriaPorGrama { get; set; }
         public decimal ProteinaPorGrama { get; set; }
+        public decimal CarboidradoPorGrama { get; set; }
 
     }
 }

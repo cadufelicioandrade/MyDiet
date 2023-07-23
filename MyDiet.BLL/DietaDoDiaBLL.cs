@@ -2,6 +2,7 @@
 using MyDiet.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,12 +18,17 @@ namespace MyDiet.BLL
             dietaDoDiaDAL = new DietaDoDiaDAL();
         }
 
-        public void CadastrarDieta(DietaDoDia dietaDoDia)
+        public DataTable ObterDietaDoDia()
+        {
+            return dietaDoDiaDAL.ObterDietaDoDia();
+        }
+
+        public void CadastrarDieta(DateTable dietaDoDia)
         {
             dietaDoDiaDAL.CadastrarDietaDoDia(dietaDoDia);
         }
 
-        public void EditarDieta(DietaDoDia dietaDoDia)
+        public void EditarDieta(DateTable dietaDoDia)
         {
             dietaDoDiaDAL.EditarDietaDoDia(dietaDoDia);
         }

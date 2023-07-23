@@ -31,6 +31,7 @@
             dgvDietaDia = new DataGridView();
             button1 = new Button();
             calHistoricoDieta = new MonthCalendar();
+            btnVoltarHistorico = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvDietaDia).BeginInit();
             SuspendLayout();
             // 
@@ -59,15 +60,27 @@
             calHistoricoDieta.Name = "calHistoricoDieta";
             calHistoricoDieta.TabIndex = 6;
             // 
-            // frmHistoricoDieta
+            // btnVoltarHistorico
+            // 
+            btnVoltarHistorico.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnVoltarHistorico.Location = new Point(260, 437);
+            btnVoltarHistorico.Name = "btnVoltarHistorico";
+            btnVoltarHistorico.Size = new Size(114, 23);
+            btnVoltarHistorico.TabIndex = 7;
+            btnVoltarHistorico.Text = "Voltar";
+            btnVoltarHistorico.UseVisualStyleBackColor = true;
+            btnVoltarHistorico.Click += btnVoltarHistorico_Click;
+            // 
+            // FrmHistoricoDieta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(506, 472);
+            Controls.Add(btnVoltarHistorico);
             Controls.Add(calHistoricoDieta);
             Controls.Add(button1);
             Controls.Add(dgvDietaDia);
-            Name = "frmHistoricoDieta";
+            Name = "FrmHistoricoDieta";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Histórico Dieta";
             ((System.ComponentModel.ISupportInitialize)dgvDietaDia).EndInit();
@@ -79,5 +92,6 @@
         private DataGridView dgvDietaDia;
         private Button button1;
         private MonthCalendar calHistoricoDieta;
+        private Button btnVoltarHistorico;
     }
 }

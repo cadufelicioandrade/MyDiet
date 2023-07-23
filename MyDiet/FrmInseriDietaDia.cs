@@ -23,8 +23,9 @@ namespace MyDiet
         {
             if (!String.IsNullOrEmpty(txtGramas.Text) && !String.IsNullOrEmpty(txtGramas.Text))
             {
-                DietaDoDia dietaDoDia = new DietaDoDia();
-                dietaDoDia.AlimentoId = Convert.ToInt32(cbxAlimentos.ValueMember);
+                DateTable dietaDoDia = new DateTable();
+                var arr = cbxAlimentos.SelectedItem.ToString().Split('-');
+                dietaDoDia.AlimentoId = Convert.ToInt32(arr[0]);
                 dietaDoDia.GramasAlimento = Convert.ToDouble(txtGramas.Text);
                 DietaDoDiaBLL dietaDoDiaBLL = new DietaDoDiaBLL();
                 dietaDoDiaBLL.CadastrarDieta(dietaDoDia);
@@ -38,7 +39,16 @@ namespace MyDiet
 
         }
 
-        private void btnCancelaDietaDia_Click(object sender, EventArgs e)
+        private void frmInseriDietaDia_Load(object sender, EventArgs e)
+        {
+            AlimentoBLL alimentoBLL = new AlimentoBLL();
+            var alimentos = alimentoBLL.ObterAlimento();
+
+            foreach (var alimento in alimentos)
+                cbxAlimentos.Items.Add($"{alimento.Id}-{alimento.NomeAlimento}");
+        }
+
+        private void btnVoltarDietaDia_Click(object sender, EventArgs e)
         {
             this.Close();
         }

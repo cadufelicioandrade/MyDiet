@@ -17,6 +17,13 @@ namespace MyDiet.BLL
             alimentoDAL = new AlimentoDAL();
         }
 
+        public List<Alimento> ObterAlimento()
+        {
+            List<Alimento> alimentos = alimentoDAL.ObterAlimento();
+
+            return alimentos;
+        }
+
         public void CadastrarAlimento(Alimento alimento)
         {
             alimentoDAL.CadastrarAlimento(alimento);

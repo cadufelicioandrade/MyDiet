@@ -1,6 +1,7 @@
 ﻿using MyDiet.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace MyDiet.DAL
             
         }
 
-        public int CadastrarDietaDoDia(DietaDoDia dietaDoDia)
+        public int CadastrarDietaDoDia(DateTable dietaDoDia)
         {
             //Fazer o trigger para calcular ProteinasTotais e CaloriasTotas
             StringBuilder sb = new StringBuilder();
@@ -25,7 +26,7 @@ namespace MyDiet.DAL
             return ExecuteScalar(sb);
         }
 
-        public bool EditarDietaDoDia(DietaDoDia dietaDoDia)
+        public bool EditarDietaDoDia(DateTable dietaDoDia)
         {
             //Fazer o trigger para recalcular ProteinasTotais e CaloriasTotas
             StringBuilder sb = new StringBuilder();
@@ -35,6 +36,24 @@ namespace MyDiet.DAL
 
 
             return ExecuteNonQuery(sb);
+        }
+
+        public DataTable ObterDietaDoDia()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat(@"select	A.NomeAlimento,
+		                                D.GramasAlimento, 
+                            (D.GramasAlimento * A.CaloriaPorGrama) AS TotaLCalorias,
+		                    (D.GramasAlimento * A.ProteinaPorGrama) AS TotalProteinas,
+		                                A.CaloriaPorGrama,
+		                                A.ProteinaPorGrama
+	                                FROM TB_DietaDoDia D JOIN
+		                                TB_Alimento A ON D.AlimentoId = A.Id
+	                                WHERE D.DataInclusao >= '{0}'", DateTime.Now.ToString("yyyy-MM-dd"));
+
+            
+
+            return Consultar(sb);
         }
     }
 }

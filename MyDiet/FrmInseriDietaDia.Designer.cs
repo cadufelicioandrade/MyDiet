@@ -33,7 +33,7 @@
             txtGramas = new TextBox();
             lblGramas = new Label();
             btnCadastradaDietaDia = new Button();
-            btnCancelaDietaDia = new Button();
+            btnVoltarDietaDia = new Button();
             SuspendLayout();
             // 
             // cbxAlimentos
@@ -80,23 +80,23 @@
             btnCadastradaDietaDia.UseVisualStyleBackColor = true;
             btnCadastradaDietaDia.Click += btnCadastradaDietaDia_Click;
             // 
-            // btnCancelaDietaDia
+            // btnVoltarDietaDia
             // 
-            btnCancelaDietaDia.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnCancelaDietaDia.Location = new Point(12, 115);
-            btnCancelaDietaDia.Name = "btnCancelaDietaDia";
-            btnCancelaDietaDia.Size = new Size(100, 23);
-            btnCancelaDietaDia.TabIndex = 5;
-            btnCancelaDietaDia.Text = "Cancelar";
-            btnCancelaDietaDia.UseVisualStyleBackColor = true;
-            btnCancelaDietaDia.Click += btnCancelaDietaDia_Click;
+            btnVoltarDietaDia.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnVoltarDietaDia.Location = new Point(12, 115);
+            btnVoltarDietaDia.Name = "btnVoltarDietaDia";
+            btnVoltarDietaDia.Size = new Size(100, 23);
+            btnVoltarDietaDia.TabIndex = 5;
+            btnVoltarDietaDia.Text = "Voltar";
+            btnVoltarDietaDia.UseVisualStyleBackColor = true;
+            btnVoltarDietaDia.Click += btnVoltarDietaDia_Click;
             // 
             // frmInseriDietaDia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(292, 153);
-            Controls.Add(btnCancelaDietaDia);
+            Controls.Add(btnVoltarDietaDia);
             Controls.Add(btnCadastradaDietaDia);
             Controls.Add(lblGramas);
             Controls.Add(txtGramas);
@@ -105,6 +105,7 @@
             Name = "frmInseriDietaDia";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inseri Dieta Dia";
+            Load += frmInseriDietaDia_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,6 +117,6 @@
         private TextBox txtGramas;
         private Label lblGramas;
         private Button btnCadastradaDietaDia;
-        private Button btnCancelaDietaDia;
+        private Button btnVoltarDietaDia;
     }
 }

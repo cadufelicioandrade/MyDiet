@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCancelarCadastro = new Button();
+            btnVoltar = new Button();
             btnBuscar = new Button();
             lblCaloriaPorGrama = new Label();
             txtCaloriaPorGrama = new TextBox();
@@ -38,20 +38,23 @@
             btnEditar = new Button();
             label1 = new Label();
             txtProteinaPorGrama = new TextBox();
+            label2 = new Label();
+            txtCarboidratoPorGrama = new TextBox();
             SuspendLayout();
             // 
-            // btnCancelarCadastro
+            // btnVoltar
             // 
-            btnCancelarCadastro.Location = new Point(29, 98);
-            btnCancelarCadastro.Name = "btnCancelarCadastro";
-            btnCancelarCadastro.Size = new Size(129, 23);
-            btnCancelarCadastro.TabIndex = 11;
-            btnCancelarCadastro.Text = "Cancelar";
-            btnCancelarCadastro.UseVisualStyleBackColor = true;
+            btnVoltar.Location = new Point(458, 104);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(129, 23);
+            btnVoltar.TabIndex = 11;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(339, 146);
+            btnBuscar.Location = new Point(151, 105);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(129, 23);
             btnBuscar.TabIndex = 10;
@@ -61,7 +64,7 @@
             // lblCaloriaPorGrama
             // 
             lblCaloriaPorGrama.AutoSize = true;
-            lblCaloriaPorGrama.Location = new Point(184, 31);
+            lblCaloriaPorGrama.Location = new Point(151, 31);
             lblCaloriaPorGrama.Name = "lblCaloriaPorGrama";
             lblCaloriaPorGrama.Size = new Size(106, 15);
             lblCaloriaPorGrama.TabIndex = 9;
@@ -69,7 +72,7 @@
             // 
             // txtCaloriaPorGrama
             // 
-            txtCaloriaPorGrama.Location = new Point(184, 50);
+            txtCaloriaPorGrama.Location = new Point(151, 50);
             txtCaloriaPorGrama.Name = "txtCaloriaPorGrama";
             txtCaloriaPorGrama.Size = new Size(129, 23);
             txtCaloriaPorGrama.TabIndex = 8;
@@ -77,7 +80,7 @@
             // lblNomeAlimento
             // 
             lblNomeAlimento.AutoSize = true;
-            lblNomeAlimento.Location = new Point(29, 31);
+            lblNomeAlimento.Location = new Point(12, 31);
             lblNomeAlimento.Name = "lblNomeAlimento";
             lblNomeAlimento.Size = new Size(95, 15);
             lblNomeAlimento.TabIndex = 7;
@@ -85,7 +88,7 @@
             // 
             // txtNomeAlimento
             // 
-            txtNomeAlimento.Location = new Point(29, 50);
+            txtNomeAlimento.Location = new Point(12, 50);
             txtNomeAlimento.Name = "txtNomeAlimento";
             txtNomeAlimento.Size = new Size(129, 23);
             txtNomeAlimento.TabIndex = 6;
@@ -93,14 +96,14 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(339, 98);
+            comboBox1.Location = new Point(12, 105);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(129, 23);
             comboBox1.TabIndex = 12;
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(184, 98);
+            btnEditar.Location = new Point(301, 104);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(129, 23);
             btnEditar.TabIndex = 13;
@@ -110,7 +113,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(339, 31);
+            label1.Location = new Point(301, 31);
             label1.Name = "label1";
             label1.Size = new Size(113, 15);
             label1.TabIndex = 15;
@@ -118,27 +121,45 @@
             // 
             // txtProteinaPorGrama
             // 
-            txtProteinaPorGrama.Location = new Point(339, 50);
+            txtProteinaPorGrama.Location = new Point(301, 50);
             txtProteinaPorGrama.Name = "txtProteinaPorGrama";
             txtProteinaPorGrama.Size = new Size(129, 23);
             txtProteinaPorGrama.TabIndex = 14;
             // 
-            // frmEditarAlimento
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(458, 31);
+            label2.Name = "label2";
+            label2.Size = new Size(132, 15);
+            label2.TabIndex = 17;
+            label2.Text = "Carboidrato Por Grama:";
+            // 
+            // txtCarboidratoPorGrama
+            // 
+            txtCarboidratoPorGrama.Location = new Point(458, 50);
+            txtCarboidratoPorGrama.Name = "txtCarboidratoPorGrama";
+            txtCarboidratoPorGrama.Size = new Size(129, 23);
+            txtCarboidratoPorGrama.TabIndex = 16;
+            // 
+            // FrmEditarAlimento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(493, 200);
+            ClientSize = new Size(604, 149);
+            Controls.Add(label2);
+            Controls.Add(txtCarboidratoPorGrama);
             Controls.Add(label1);
             Controls.Add(txtProteinaPorGrama);
             Controls.Add(btnEditar);
             Controls.Add(comboBox1);
-            Controls.Add(btnCancelarCadastro);
+            Controls.Add(btnVoltar);
             Controls.Add(btnBuscar);
             Controls.Add(lblCaloriaPorGrama);
             Controls.Add(txtCaloriaPorGrama);
             Controls.Add(lblNomeAlimento);
             Controls.Add(txtNomeAlimento);
-            Name = "frmEditarAlimento";
+            Name = "FrmEditarAlimento";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Editar Alimento";
             ResumeLayout(false);
@@ -147,7 +168,7 @@
 
         #endregion
 
-        private Button btnCancelarCadastro;
+        private Button btnVoltar;
         private Button btnBuscar;
         private Label lblCaloriaPorGrama;
         private TextBox txtCaloriaPorGrama;
@@ -157,5 +178,7 @@
         private Button btnEditar;
         private Label label1;
         private TextBox txtProteinaPorGrama;
+        private Label label2;
+        private TextBox txtCarboidratoPorGrama;
     }
 }

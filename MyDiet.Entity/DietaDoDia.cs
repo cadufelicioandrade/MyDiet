@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyDiet.Entity
 {
-    public class DietaDoDia
+    public class DateTable
     {
-        public DietaDoDia()
+        public DateTable()
         {
             
         }
@@ -18,6 +18,7 @@ namespace MyDiet.Entity
         public double CaloriasTotais { get; set; }
         public double ProteinasTotais { get; set; }
         public int AlimentoId { get; set; }
+        public int UsuarioId { get; set; }
 
     }
 }

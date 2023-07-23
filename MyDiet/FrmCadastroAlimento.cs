@@ -39,7 +39,7 @@ namespace MyDiet
 
         }
 
-        private void btnCancelarCadastro_Click(object sender, EventArgs e)
+        private void btnVoltarCadastro_Click(object sender, EventArgs e)
         {
             this.Close();
         }

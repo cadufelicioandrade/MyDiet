@@ -42,7 +42,7 @@
             // 
             // btnInserirDietaDia
             // 
-            btnInserirDietaDia.Location = new Point(417, 39);
+            btnInserirDietaDia.Location = new Point(463, 39);
             btnInserirDietaDia.Name = "btnInserirDietaDia";
             btnInserirDietaDia.Size = new Size(123, 23);
             btnInserirDietaDia.TabIndex = 0;
@@ -53,24 +53,25 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 39);
+            dataGridView1.Location = new Point(11, 39);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(397, 187);
+            dataGridView1.Size = new Size(444, 187);
             dataGridView1.TabIndex = 1;
             // 
             // btnEditarAlimento
             // 
-            btnEditarAlimento.Location = new Point(417, 147);
+            btnEditarAlimento.Location = new Point(463, 147);
             btnEditarAlimento.Name = "btnEditarAlimento";
             btnEditarAlimento.Size = new Size(123, 23);
             btnEditarAlimento.TabIndex = 2;
             btnEditarAlimento.Text = "Editar Alimento";
             btnEditarAlimento.UseVisualStyleBackColor = true;
+            btnEditarAlimento.Click += btnEditarAlimento_Click;
             // 
             // btnCadastrarAlimento
             // 
-            btnCadastrarAlimento.Location = new Point(417, 93);
+            btnCadastrarAlimento.Location = new Point(463, 93);
             btnCadastrarAlimento.Name = "btnCadastrarAlimento";
             btnCadastrarAlimento.Size = new Size(123, 23);
             btnCadastrarAlimento.TabIndex = 3;
@@ -80,17 +81,18 @@
             // 
             // btnHistorico
             // 
-            btnHistorico.Location = new Point(417, 201);
+            btnHistorico.Location = new Point(463, 201);
             btnHistorico.Name = "btnHistorico";
             btnHistorico.Size = new Size(123, 23);
             btnHistorico.TabIndex = 4;
             btnHistorico.Text = "Exibir Histórico";
             btnHistorico.UseVisualStyleBackColor = true;
+            btnHistorico.Click += btnHistorico_Click;
             // 
             // lblTotalCaloriasDia
             // 
             lblTotalCaloriasDia.AutoSize = true;
-            lblTotalCaloriasDia.Location = new Point(266, 239);
+            lblTotalCaloriasDia.Location = new Point(315, 239);
             lblTotalCaloriasDia.Name = "lblTotalCaloriasDia";
             lblTotalCaloriasDia.Size = new Size(100, 15);
             lblTotalCaloriasDia.TabIndex = 5;
@@ -99,7 +101,7 @@
             // lblValorCaloricoTotal
             // 
             lblValorCaloricoTotal.AutoSize = true;
-            lblValorCaloricoTotal.Location = new Point(372, 239);
+            lblValorCaloricoTotal.Location = new Point(414, 239);
             lblValorCaloricoTotal.Name = "lblValorCaloricoTotal";
             lblValorCaloricoTotal.Size = new Size(37, 15);
             lblValorCaloricoTotal.TabIndex = 6;
@@ -108,7 +110,7 @@
             // lblValorProteicoTotal
             // 
             lblValorProteicoTotal.AutoSize = true;
-            lblValorProteicoTotal.Location = new Point(221, 239);
+            lblValorProteicoTotal.Location = new Point(274, 239);
             lblValorProteicoTotal.Name = "lblValorProteicoTotal";
             lblValorProteicoTotal.Size = new Size(37, 15);
             lblValorProteicoTotal.TabIndex = 8;
@@ -117,17 +119,17 @@
             // lblTotalProteinaDia
             // 
             lblTotalProteinaDia.AutoSize = true;
-            lblTotalProteinaDia.Location = new Point(115, 239);
+            lblTotalProteinaDia.Location = new Point(168, 239);
             lblTotalProteinaDia.Name = "lblTotalProteinaDia";
             lblTotalProteinaDia.Size = new Size(107, 15);
             lblTotalProteinaDia.TabIndex = 7;
             lblTotalProteinaDia.Text = "Total Proteínas Dia:";
             // 
-            // frmMinhaDieta
+            // FrmMinhaDieta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(552, 277);
+            ClientSize = new Size(605, 277);
             Controls.Add(lblValorProteicoTotal);
             Controls.Add(lblTotalProteinaDia);
             Controls.Add(lblValorCaloricoTotal);
@@ -137,9 +139,10 @@
             Controls.Add(btnEditarAlimento);
             Controls.Add(dataGridView1);
             Controls.Add(btnInserirDietaDia);
-            Name = "frmMinhaDieta";
+            Name = "FrmMinhaDieta";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Minha Dieta";
+            Load += FrmMinhaDieta_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

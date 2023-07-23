@@ -1,0 +1,12 @@
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\bin\Release\net6.0\MyDiet.Entity.deps.json
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\bin\Release\net6.0\MyDiet.Entity.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\bin\Release\net6.0\MyDiet.Entity.pdb
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.csproj.AssemblyReference.cache
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.AssemblyInfoInputs.cache
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.AssemblyInfo.cs
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\refint\MyDiet.Entity.dll
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\MyDiet.Entity.pdb
+C:\Users\Carlos Eduardo\Desktop\MyDiet\MyDiet.Entity\obj\Release\net6.0\ref\MyDiet.Entity.dll
